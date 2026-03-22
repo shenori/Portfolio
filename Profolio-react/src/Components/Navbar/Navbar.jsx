@@ -1,21 +1,20 @@
-import React from 'react'
-import './Navbar.css';
-import logo from '../../assets/logo.jpg';
+import "./Navbar.css";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
-      <img src={logo} alt=" " />
-      <ul className='nav-menu'>
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Services</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-      </ul>
-      <div className='nav-connect'>Connect With Me</div>
-    </div>
-  )
-}
+    <nav className="navbar">
+      <h2 className="logo">Portfolio</h2>
 
-export default Navbar
+      <ul>
+        <li><Link to="hero" smooth={true}>Home</Link></li>
+        <li><Link to="about" smooth={true}>About</Link></li>
+        <li><Link to="services" smooth={true}>Services</Link></li>
+        <li><Link to="work" smooth={true}>Work</Link></li>
+        <li><Link to="contact" smooth={true}>Contact</Link></li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
