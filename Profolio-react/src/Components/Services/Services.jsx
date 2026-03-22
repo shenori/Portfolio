@@ -1,18 +1,21 @@
-import React from 'react';
-import './Services.css';
+import "./Services.css";
 
 const Services = () => {
   return (
-    <div className='services'>
-      <div className='services-title'>
-        <h1>My Services</h1>
-        <img src={" "} alt=""/>
-      </div>
-      <div className='services-container'>
-        
-      </div>
-    </div>
-  )
-}
+    <section id="services" className="services">
+      <h2>Services</h2>
 
-export default Services
+      <div className="service-box">
+        <h3>Web Development</h3>
+        <p>Building responsive websites</p>
+      </div>
+
+      <div className="service-box">
+        <h3>UI Design</h3>
+        <p>Modern UI/UX design</p>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
