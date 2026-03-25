@@ -36,7 +36,7 @@
 
 /* About Text */
 .about-text h3,
-.about-education h3 {
+.about-right h3 {
   font-family: var(--font-display);
   font-size: 1.5rem;
   margin-bottom: 25px;
@@ -79,12 +79,57 @@
   transform: translateY(-2px);
 }
 
+/* Certifications */
+.certifications-section {
+  padding: 30px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+}
+
+.certifications-list {
+  list-style: none;
+}
+
+.certifications-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 12px 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+  font-size: 0.95rem;
+}
+
+.certifications-list li:last-child {
+  border-bottom: none;
+}
+
+.certifications-list li:hover {
+  color: var(--text-primary);
+  padding-left: 10px;
+}
+
+.cert-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 50%;
+  color: var(--accent-primary);
+}
+
 /* Achievements */
 .achievements-section {
   padding: 30px;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 20px;
+  margin-top: 30px;
 }
 
 .achievements-list {
@@ -95,7 +140,7 @@
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  padding: 15px 0;
+  padding: 12px 0;
   color: var(--text-secondary);
   border-bottom: 1px solid var(--border-color);
   transition: all var(--transition-fast);
@@ -123,6 +168,10 @@
 }
 
 /* Education Timeline */
+.about-education {
+  margin-bottom: 30px;
+}
+
 .education-timeline {
   display: flex;
   flex-direction: column;
@@ -191,6 +240,22 @@
 /* CTA */
 .about-cta {
   text-align: center;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(26, 26, 37, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 30px;
+  transition: all var(--transition-medium);
+}
+
+.glass-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive */

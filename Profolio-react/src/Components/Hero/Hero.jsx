@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import "./Hero.css";
+import profilePhoto from "../../assets/photo.jpg";
 
 const Hero = () => {
   const socialLinks = [
@@ -56,13 +57,14 @@ const Hero = () => {
           <div className="hero-role">
             <span className="role-text">Computer Science Undergraduate</span>
             <span className="role-divider">|</span>
-            <span className="role-text">Frontend Developer</span>
+            <span className="role-text">Full-Stack Developer</span>
           </div>
 
           <p className="hero-description">
-            Passionate and detail-oriented developer with a strong interest in UI/UX 
-            design, front-end and back-end development. I create interface solutions 
-            that combine simple code with intuitive user experiences.
+            I am a passionate and detail-oriented developer with a strong interest in 
+            full-stack web development, specializing in front-end technologies like 
+            React and back-end development using Node.js. I enjoy building efficient, 
+            user-friendly applications by combining clean code with practical functionality.
           </p>
 
           <div className="hero-actions">
@@ -97,14 +99,12 @@ const Hero = () => {
         <div className="hero-visual">
           <div className="profile-card">
             <div className="profile-image">
-              <div className="image-placeholder">
-                <span>SR</span>
-              </div>
+              <img src={profilePhoto} alt="Shenori Ruwesha" className="profile-photo" />
               <div className="profile-ring"></div>
             </div>
             <div className="profile-stats">
               <div className="stat">
-                <span className="stat-number">4+</span>
+                <span className="stat-number">5+</span>
                 <span className="stat-label">Projects</span>
               </div>
               <div className="stat">
