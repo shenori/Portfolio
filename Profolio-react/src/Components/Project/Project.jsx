@@ -13,6 +13,18 @@ const Projects = () => {
       status: "In Progress",
     },
     {
+      id: 1,
+      title: "Inventory Management System",
+      subtitle: "Internal Tool — Ceyntics Systems (Pvt) Ltd",
+      description:
+        "A secure internal inventory management system built for Ceyntics Systems. Features role-based access control, item tracking with borrow/return flow, storage hierarchy management, and a full audit log trail. Deployed on Railway (backend) and Vercel (frontend).",
+      technologies: ["Next.js", "Laravel", "PostgreSQL", "Sanctum"],
+      year: "2026",
+      type: "Individual Project",
+      status: "Completed",
+      link: "https://inventory-frontend-weld-three.vercel.app",
+    },
+    {
       id: 2,
       title: "BetterMe",
       subtitle: "Personal Development Website",
