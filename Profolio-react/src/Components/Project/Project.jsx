@@ -36,6 +36,17 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "GearRent Pro",
+      subtitle: "Multi-Branch Equipment Rental System",
+      description:
+        "A comprehensive Java desktop application for managing equipment rentals across multiple branches. Features role-based access control (Admin, Branch Manager, Staff), equipment inventory management, reservation and rental processing with dynamic pricing, return settlement with late fee and damage charge calculation, overdue rental tracking, and branch revenue reports.",
+      technologies: ["Java", "Java Swing", "MySQL", "JDBC"],
+      year: "2025",
+      type: "Individual Project",
+      status: "Completed",
+    },
+    {
+      id: 4,
       title: "Hostel Management System",
       subtitle: "Room & Student Management",
       description: "A comprehensive Java application for managing hostel operations.",
@@ -45,7 +56,7 @@ const Projects = () => {
       status: "Completed",
     },
     {
-      id: 4,
+      id: 5,
       title: "Traffic Data Analysis",
       subtitle: "Data Collection at Junctions",
       description: "Python application for gathering and analyzing traffic data.",
