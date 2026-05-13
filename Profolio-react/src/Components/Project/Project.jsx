@@ -10,10 +10,10 @@ const Projects = () => {
       technologies: ["React", "Node.js", "MongoDB", "Express"],
       year: "2025 - Present",
       type: "Group Project",
-      status: "In Progress",
+      status: "Completed",
     },
     {
-      id: 1,
+      id: 2,
       title: "Inventory Management System",
       subtitle: "Internal Tool — Ceyntics Systems (Pvt) Ltd",
       description:
@@ -25,7 +25,7 @@ const Projects = () => {
       link: "https://inventory-frontend-weld-three.vercel.app",
     },
     {
-      id: 2,
+      id: 3,
       title: "BetterMe",
       subtitle: "Personal Development Website",
       description: "Led a team to create a comprehensive personal development website.",
@@ -35,7 +35,7 @@ const Projects = () => {
       status: "Completed",
     },
     {
-      id: 3,
+      id: 4,
       title: "GearRent Pro",
       subtitle: "Multi-Branch Equipment Rental System",
       description:
@@ -46,7 +46,7 @@ const Projects = () => {
       status: "Completed",
     },
     {
-      id: 4,
+      id: 5,
       title: "Hostel Management System",
       subtitle: "Room & Student Management",
       description: "A comprehensive Java application for managing hostel operations.",
@@ -56,7 +56,7 @@ const Projects = () => {
       status: "Completed",
     },
     {
-      id: 5,
+      id: 6,
       title: "Traffic Data Analysis",
       subtitle: "Data Collection at Junctions",
       description: "Python application for gathering and analyzing traffic data.",
