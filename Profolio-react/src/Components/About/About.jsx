@@ -140,7 +140,7 @@ const About = () => {
         </div>
 
         <div className="about-cta">
-          <a href="/Shenori_Ruwesha_CV.pdf" className="btn-primary" download>
+          <a href="/Shenori%20Resume.pdf" className="btn-primary" download>
             Download CV
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
