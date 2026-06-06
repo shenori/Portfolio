@@ -39,7 +39,7 @@ const projects = [
     },
   },
   {
-    id: 3,
+    id: 6,
     tag: "web-dev",
     category: "Web Dev",
     status: "Completed",
@@ -51,15 +51,14 @@ const projects = [
     tools: ["HTML", "CSS", "JavaScript"],
     type: "Team Leader • 2025",
     links: {
-      live: "",
-      github: "", 
-      figma: "",
+      live: "C:/Users/Asus/Downloads/1st%20year/Better%20Me/Design/Design/HTML%20files/splash.html",
+      github: "https://github.com/shenori/BetterMe",
     },
   },
 
   // ── UI/UX ─────────────────────────────────────────────────────────
   {
-    id: 4,
+    id: 7,
     tag: "ui-ux",
     category: "UI/UX Design",
     status: "Completed",
@@ -80,7 +79,7 @@ const projects = [
 
   // ── Other / Backend ───────────────────────────────────────────────
   {
-    id: 5,
+    id: 4,
     tag: "other",
     category: "Other",
     status: "Completed",
@@ -98,7 +97,7 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 5,
     tag: "other",
     category: "Other",
     status: "In Progress",
@@ -116,7 +115,7 @@ const projects = [
     },
   },
   {
-    id: 7,
+    id: 8,
     tag: "other",
     category: "Other",
     status: "Completed",
@@ -134,7 +133,7 @@ const projects = [
     },
   },
   {
-    id: 8,
+    id: 3,
     tag: "other",
     category: "Other",
     status: "Completed",
