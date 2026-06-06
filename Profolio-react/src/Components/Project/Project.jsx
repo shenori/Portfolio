@@ -39,7 +39,7 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 3,
     tag: "web-dev",
     category: "Web Dev",
     status: "Completed",
@@ -58,7 +58,7 @@ const projects = [
 
   // ── UI/UX ─────────────────────────────────────────────────────────
   {
-    id: 7,
+    id: 4,
     tag: "ui-ux",
     category: "UI/UX Design",
     status: "Completed",
@@ -79,7 +79,7 @@ const projects = [
 
   // ── Other / Backend ───────────────────────────────────────────────
   {
-    id: 4,
+    id: 5,
     tag: "other",
     category: "Other",
     status: "Completed",
@@ -97,7 +97,7 @@ const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     tag: "other",
     category: "Other",
     status: "In Progress",
@@ -115,7 +115,7 @@ const projects = [
     },
   },
   {
-    id: 8,
+    id: 7,
     tag: "other",
     category: "Other",
     status: "Completed",
@@ -133,7 +133,7 @@ const projects = [
     },
   },
   {
-    id: 3,
+    id: 8,
     tag: "other",
     category: "Other",
     status: "Completed",
