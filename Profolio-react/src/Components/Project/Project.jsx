@@ -1,100 +1,253 @@
+import React, { useState } from "react";
+import { FaFigma, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import "./Project.css";
 
-const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "CrackCode",
-      subtitle: "Gamified Learning Platform",
-      description: "A full-stack gamified learning platform that revolutionizes coding education through interactive experiences. Developed both frontend and backend components using React for a dynamic user interface and Node.js with Express for robust server-side functionality. The platform offers comprehensive learning paths across Python, JavaScript, Java, and C++ with hands-on coding challenges, real-time code execution, and instant feedback systems. Implemented MongoDB for efficient data management of user progress, course content, and achievements. Key features include user authentication with JWT, personalized learning dashboards, progress tracking with visual analytics, interactive code editors, and gamification elements like badges, points, and skill-based assessments. The responsive design ensures seamless learning experiences across desktop and mobile devices, while the RESTful API architecture enables smooth communication between frontend and backend services.",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "JWT", "RESTful API"],
-      year: "2025 - Present",
-      type: "Group Project",
-      status: "Completed",
+const projects = [
+  // ── Web Dev ──────────────────────────────────────────────────────
+  {
+    id: 1,
+    tag: "web-dev",
+    category: "Web Dev",
+    status: "In Progress",
+    statusColor: "status-progress",
+    title: "CrackCode",
+    subtitle: "Gamified Learning Platform",
+    description:
+      "A gamified learning platform designed to make coding education engaging and interactive with challenges, progress tracking, and achievement systems.",
+    tools: ["React", "Node.js", "MongoDB", "Express"],
+    type: "Group Project • 2025 - Present",
+    links: {
+      live: "https://crackcodehq.com/",
+      github: "https://github.com/CrackCode-dev/CrackCode-Main",
     },
-    {
-      id: 2,
-      title: "Inventory Management System",
-      subtitle: "Internal Tool — Ceyntics Systems (Pvt) Ltd",
-      description:
-        "A secure internal inventory management system built for Ceyntics Systems. Features role-based access control, item tracking with borrow/return flow, storage hierarchy management, and a full audit log trail. Deployed on Railway (backend) and Vercel (frontend).",
-      technologies: ["Next.js", "Laravel", "PostgreSQL", "Sanctum"],
-      year: "2026",
-      type: "Individual Project",
-      status: "Completed",
-      link: "https://inventory-frontend-weld-three.vercel.app",
+  },
+  {
+    id: 2,
+    tag: "web-dev",
+    category: "Web Dev",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "Inventory Management System",
+    subtitle: "Internal Tool — Ceyntics Systems (Pvt) Ltd",
+    description:
+      "A secure internal inventory management system with role-based access control, item borrow/return tracking, hierarchical storage management, and full audit log trail. Deployed on Railway (backend) and Vercel (frontend).",
+    tools: ["Next.js", "Laravel", "PostgreSQL", "Sanctum"],
+    type: "Individual Project • 2026",
+    links: {
+      live: "https://inventory-frontend-weld-three.vercel.app/",
+      github: "https://github.com/shenori/Inventory-System",
     },
-    {
-      id: 3,
-      title: "BetterMe",
-      subtitle: "Personal Development Website",
-      description: "Led a team to create a comprehensive personal development website.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      year: "2025",
-      type: "Group Project (Team Leader)",
-      status: "Completed",
+  },
+  {
+    id: 3,
+    tag: "web-dev",
+    category: "Web Dev",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "BetterMe",
+    subtitle: "Personal Development Website",
+    description:
+      "Led a team to create a comprehensive personal development website with goal tracking and self-improvement resources.",
+    tools: ["HTML", "CSS", "JavaScript"],
+    type: "Team Leader • 2025",
+    links: {
+      live: "",
+      github: "", 
+      figma: "",
     },
-    {
-      id: 4,
-      title: "GearRent Pro",
-      subtitle: "Multi-Branch Equipment Rental System",
-      description:
-        "A comprehensive Java desktop application for managing equipment rentals across multiple branches. Features role-based access control (Admin, Branch Manager, Staff), equipment inventory management, reservation and rental processing with dynamic pricing, return settlement with late fee and damage charge calculation, overdue rental tracking, and branch revenue reports.",
-      technologies: ["Java", "Java Swing", "MySQL", "JDBC"],
-      year: "2025",
-      type: "Individual Project",
-      status: "Completed",
+  },
+
+  // ── UI/UX ─────────────────────────────────────────────────────────
+  {
+    id: 4,
+    tag: "ui-ux",
+    category: "UI/UX Design",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "WisenTask – AI Marketing Page",
+    subtitle: "Marketing Page UI Design",
+    description:
+      "High-fidelity marketing page UI/UX design for an AI-powered task management SaaS product, featuring hero section, bento feature grid, pricing cards and testimonials.",
+    tools: ["Figma"],
+    type: "Individual Project • 2025",
+    links: {
+      figma:
+        "https://www.figma.com/proto/gcGyQ3m9SizbnZl4TQQepA/Untitled?node-id=0-1&t=fz57uveBx8S6W2K4-1",
+      github: "",
+      live: "",
     },
-    {
-      id: 5,
-      title: "Hostel Management System",
-      subtitle: "Room & Student Management",
-      description: "A comprehensive Java application for managing hostel operations.",
-      technologies: ["Java", "MySQL", "JavaFX"],
-      year: "2025",
-      type: "Individual Project",
-      status: "Completed",
+  },
+
+  // ── Other / Backend ───────────────────────────────────────────────
+  {
+    id: 5,
+    tag: "other",
+    category: "Other",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "Hostel Management System",
+    subtitle: "Room & Student Management",
+    description:
+      "A comprehensive Java application for managing hostel operations including room allocation, student records, and payment tracking.",
+    tools: ["Java"],
+    type: "Individual Project • 2025",
+    links: {
+      live: "",
+      github: "", // add if you have one
+      figma: "",
     },
-    {
-      id: 6,
-      title: "Traffic Data Analysis",
-      subtitle: "Data Collection at Junctions",
-      description: "Python application for gathering and analyzing traffic data.",
-      technologies: ["Python", "Tkinter"],
-      year: "2024",
-      type: "Individual Project",
-      status: "Completed",
+  },
+  {
+    id: 6,
+    tag: "other",
+    category: "Other",
+    status: "In Progress",
+    statusColor: "status-progress",
+    title: "Air Ticket Collector",
+    subtitle: "Ticket Management System",
+    description:
+      "A back-end air ticket management system using Spring Boot with JPA database integration, managing airports, tickets, and travel data.",
+    tools: ["Spring Boot", "MySQL"],
+    type: "Individual Project • 2025 - Present",
+    links: {
+      live: "",
+      github: "",
+      figma: "",
     },
-  ];
+  },
+  {
+    id: 7,
+    tag: "other",
+    category: "Other",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "Traffic Data Analysis Tool",
+    subtitle: "Data Visualization",
+    description:
+      "Python application for gathering and analyzing traffic data at two junctions with data visualization and statistical analysis.",
+    tools: ["Python", "Tkinter"],
+    type: "Individual Project • 2024",
+    links: {
+      live: "",
+      github: "",
+      figma: "",
+    },
+  },
+  {
+    id: 8,
+    tag: "other",
+    category: "Other",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "Smart Campus Management System",
+    subtitle: "Academic Operations",
+    description:
+      "A scalable campus management system to streamline academic operations, using Spring Boot, MySQL, and RESTful APIs with Postman testing.",
+    tools: ["Java", "Spring Boot", "MySQL", "REST API"],
+    type: "Individual Project • 2026",
+    links: {
+      live: "",
+      github: "",
+      figma: "",
+    },
+  },
+];
+
+const FILTERS = [
+  { label: "All",          value: "all" },
+  { label: "Web Dev",      value: "web-dev" },
+  { label: "UI/UX Design", value: "ui-ux" },
+  { label: "Other",        value: "other" },
+];
+
+function ProjectCard({ project }) {
+  const {
+    status, statusColor, title, subtitle,
+    description, tools, type, links,
+  } = project;
+
+  const hasLinks = links.figma || links.github || links.live;
 
   return (
-    <section id="projects" className="projects">
-      <div className="projects-container">
-        <div className="projects-header">
-          <span className="section-tag">My Work</span>
-          <h2 className="section-title">Featured Projects</h2>
-        </div>
-        <div className="projects-grid">
-          {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              <span className={`status ${project.status === "In Progress" ? "in-progress" : ""}`}>
-                {project.status}
-              </span>
-              <h3>{project.title}</h3>
-              <p className="subtitle">{project.subtitle}</p>
-              <p>{project.description}</p>
-              <div className="tech-tags">
-                {project.technologies.map((tech, i) => (
-                  <span key={i} className="tech-tag">{tech}</span>
-                ))}
-              </div>
-              <p className="project-meta">{project.type} • {project.year}</p>
-            </div>
-          ))}
-        </div>
+    <div className="proj-card">
+      {/* Status badge */}
+      <span className={`proj-status ${statusColor}`}>{status}</span>
+
+      {/* Title */}
+      <h3 className="proj-title">{title}</h3>
+      <p className="proj-subtitle">{subtitle}</p>
+
+      {/* Description */}
+      <p className="proj-desc">{description}</p>
+
+      {/* Tools */}
+      <div className="proj-tools">
+        {tools.map((t) => (
+          <span key={t} className="proj-chip">{t}</span>
+        ))}
+      </div>
+
+      {/* Footer row */}
+      <div className="proj-footer">
+        <span className="proj-type">{type}</span>
+
+        {/* Links — only show icons that have a URL */}
+        {hasLinks && (
+          <div className="proj-links">
+            {links.figma && (
+              <a href={links.figma} target="_blank" rel="noopener noreferrer"
+                className="proj-link-btn" title="View on Figma">
+                <FaFigma />
+              </a>
+            )}
+            {links.github && (
+              <a href={links.github} target="_blank" rel="noopener noreferrer"
+                className="proj-link-btn" title="GitHub Repo">
+                <FaGithub />
+              </a>
+            )}
+            {links.live && (
+              <a href={links.live} target="_blank" rel="noopener noreferrer"
+                className="proj-link-btn" title="Live Site">
+                <FaExternalLinkAlt />
+              </a>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default function Projects() {
+  const [active, setActive] = useState("all");
+
+  const filtered =
+    active === "all"
+      ? projects
+      : projects.filter((p) => p.tag === active);
+
+  return (
+    <section id="projects" className="proj-section">
+      {/* Filter tabs */}
+      <div className="proj-filters">
+        {FILTERS.map((f) => (
+          <button
+            key={f.value}
+            className={`proj-filter-btn ${active === f.value ? "active" : ""}`}
+            onClick={() => setActive(f.value)}
+          >
+            {f.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Grid */}
+      <div className="proj-grid">
+        {filtered.map((p) => (
+          <ProjectCard key={p.id} project={p} />
+        ))}
       </div>
     </section>
   );
-};
-
-export default Projects;
+}
