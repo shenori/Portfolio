@@ -38,23 +38,6 @@ const projects = [
       github: "https://github.com/shenori/Inventory-System",
     },
   },
-  {
-    id: 3,
-    tag: "web-dev",
-    category: "Web Dev",
-    status: "Completed",
-    statusColor: "status-done",
-    title: "BetterMe",
-    subtitle: "Personal Development Website",
-    description:
-      "Led a team to create a comprehensive personal development website with goal tracking and self-improvement resources.",
-    tools: ["HTML", "CSS", "JavaScript"],
-    type: "Team Leader • 2025",
-    links: {
-      live: "C:/Users/Asus/Downloads/1st%20year/Better%20Me/Design/Design/HTML%20files/splash.html",
-      github: "https://github.com/shenori/BetterMe",
-    },
-  },
 
   // ── UI/UX ─────────────────────────────────────────────────────────
   {
@@ -63,7 +46,7 @@ const projects = [
     category: "UI/UX Design",
     status: "Completed",
     statusColor: "status-done",
-    title: "WisenTask – AI Marketing Page",
+    title: "WisenTask - AI Marketing Page",
     subtitle: "Marketing Page UI Design",
     description:
       "High-fidelity marketing page UI/UX design for an AI-powered task management SaaS product, featuring hero section, bento feature grid, pricing cards and testimonials.",
@@ -77,43 +60,65 @@ const projects = [
     },
   },
 
-  // ── Other / Backend ───────────────────────────────────────────────
-  {
-    id: 5,
-    tag: "other",
-    category: "Other",
-    status: "Completed",
-    statusColor: "status-done",
-    title: "Hostel Management System",
-    subtitle: "Room & Student Management",
-    description:
-      "A comprehensive Java application for managing hostel operations including room allocation, student records, and payment tracking.",
-    tools: ["Java"],
-    type: "Individual Project • 2025",
-    links: {
-      live: "",
-      github: "", // add if you have one
-      figma: "",
-    },
-  },
+  // ── Java / Desktop ────────────────────────────────────────────────
   {
     id: 6,
-    tag: "other",
-    category: "Other",
-    status: "In Progress",
-    statusColor: "status-progress",
-    title: "Air Ticket Collector",
-    subtitle: "Ticket Management System",
+    tag: "java",
+    category: "Desktop Applications",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "GearRent Pro",
+    subtitle: "Multi-Branch Equipment Rental System",
     description:
-      "A back-end air ticket management system using Spring Boot with JPA database integration, managing airports, tickets, and travel data.",
-    tools: ["Spring Boot", "MySQL"],
-    type: "Individual Project • 2025 - Present",
+      "A Java Swing desktop application for managing equipment rentals across multiple branches. Features include multi-branch inventory management, customer registration with membership levels, automated rental pricing calculation, return processing with late fees and damage charges, overdue tracking, and comprehensive branch-wise revenue reports. Implements role-based access control (Admin, Branch Manager, Staff) and enforces complex business rules including booking overlap validation and security deposit management.",
+    tools: ["Java 21", "Java Swing", "MySQL 8", "JDBC", "Apache Ant", "NetBeans"],
+    type: "Individual Project • 2024 - 2025",
+    coursework: "Comprehensive Master Java Developer (IJSE) — CW2",
+    links: {
+      github: "https://github.com/shenori/GearRentPro",
+    },
+  },
+
+  // ── Backend APIs ──────────────────────────────────────────────────
+  {
+    id: 8,
+    tag: "java",
+    category: "Backend APIs",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "Smart Campus Management System",
+    subtitle: "IoT-Enabled University Room & Sensor Management System",
+    description:
+      "A scalable, enterprise-grade campus management system built with JAX-RS (Jersey) framework and deployed on Apache Tomcat. Provides RESTful endpoints for intelligent room allocation and IoT sensor monitoring across university facilities. Includes HATEOAS discovery, sensor type filtering, sub-resource hierarchies for sensor readings, and comprehensive HTTP error handling with referential integrity constraints.",
+    tools: ["Java 11", "JAX-RS", "Jersey 2.35", "Apache Tomcat 9", "Maven 3.6+", "Jackson JSON", "RESTful APIs", "Postman"],
+    type: "Individual Project • 2024 - 2026",
+    coursework: "Web Services & REST API (IJSE) — CW1",
+    links: {
+      github: "https://github.com/shenori/Smart-Campus-Api",
+    },
+  },
+
+  // ── Full Stack ────────────────────────────────────────────────────
+  {
+    id: 10,
+    tag: "fullstack",
+    category: "Full Stack Applications",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "Online Food Ordering System",
+    subtitle: "Full-Stack Restaurant Management & Ordering Platform",
+    description:
+      "A complete full-stack food ordering platform with React TypeScript frontend and Java Spring Boot backend. Features customer ordering, restaurant management, real-time order tracking, payment processing, and admin controls.",
+    tools: ["TypeScript", "React 19", "Vite", "React Router", "Axios", "Bootstrap 5", "Tailwind CSS", "Java", "Spring Boot"],
+    type: "Individual Project • 2024 - 2025",
     links: {
       live: "",
-      github: "",
+      github: "https://github.com/shenori/Online-Food-Ordering-System",
       figma: "",
     },
   },
+
+  // ── Moved to last ─────────────────────────────────────────────────
   {
     id: 7,
     tag: "other",
@@ -133,30 +138,47 @@ const projects = [
     },
   },
   {
-    id: 8,
+    id: 5,
     tag: "other",
     category: "Other",
     status: "Completed",
     statusColor: "status-done",
-    title: "Smart Campus Management System",
-    subtitle: "Academic Operations",
+    title: "Hostel Management System",
+    subtitle: "Room & Student Management",
     description:
-      "A scalable campus management system to streamline academic operations, using Spring Boot, MySQL, and RESTful APIs with Postman testing.",
-    tools: ["Java", "Spring Boot", "MySQL", "REST API"],
-    type: "Individual Project • 2026",
+      "A comprehensive Java application for managing hostel operations including room allocation, student records, and payment tracking.",
+    tools: ["Java"],
+    type: "Individual Project • 2025",
     links: {
       live: "",
       github: "",
       figma: "",
     },
   },
+  {
+    id: 3,
+    tag: "web-dev",
+    category: "Web Dev",
+    status: "Completed",
+    statusColor: "status-done",
+    title: "BetterMe",
+    subtitle: "Personal Development Website",
+    description:
+      "Led a team to create a comprehensive personal development website with goal tracking and self-improvement resources.",
+    tools: ["HTML", "CSS", "JavaScript"],
+    type: "Team Leader • 2025",
+    links: {
+      live: "",
+      github: "https://github.com/shenori/BetterMe",
+    },
+  },
 ];
 
 const FILTERS = [
-  { label: "All",          value: "all" },
-  { label: "Web Dev",      value: "web-dev" },
-  { label: "UI/UX Design", value: "ui-ux" },
-  { label: "Other",        value: "other" },
+  { label: "All",          value: "all"      },
+  { label: "Web Dev",      value: "web-dev"  },
+  { label: "UI/UX Design", value: "ui-ux"   },
+  { label: "Other",        value: "other"    },
 ];
 
 function ProjectCard({ project }) {
@@ -165,32 +187,26 @@ function ProjectCard({ project }) {
     description, tools, type, links,
   } = project;
 
-  const hasLinks = links.figma || links.github || links.live;
+  const hasLinks = links && (links.figma || links.github || links.live);
 
   return (
     <div className="proj-card">
-      {/* Status badge */}
       <span className={`proj-status ${statusColor}`}>{status}</span>
 
-      {/* Title */}
       <h3 className="proj-title">{title}</h3>
       <p className="proj-subtitle">{subtitle}</p>
 
-      {/* Description */}
       <p className="proj-desc">{description}</p>
 
-      {/* Tools */}
       <div className="proj-tools">
         {tools.map((t) => (
           <span key={t} className="proj-chip">{t}</span>
         ))}
       </div>
 
-      {/* Footer row */}
       <div className="proj-footer">
         <span className="proj-type">{type}</span>
 
-        {/* Links — only show icons that have a URL */}
         {hasLinks && (
           <div className="proj-links">
             {links.figma && (
@@ -221,14 +237,18 @@ function ProjectCard({ project }) {
 export default function Projects() {
   const [active, setActive] = useState("all");
 
+  // Deduplicate by title as a safety net
+  const unique = projects.filter(
+    (p, i, arr) => arr.findIndex((x) => x.title === p.title) === i
+  );
+
   const filtered =
     active === "all"
-      ? projects
-      : projects.filter((p) => p.tag === active);
+      ? unique
+      : unique.filter((p) => p.tag === active);
 
   return (
     <section id="projects" className="proj-section">
-      {/* Filter tabs */}
       <div className="proj-filters">
         {FILTERS.map((f) => (
           <button
@@ -241,7 +261,6 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* Grid */}
       <div className="proj-grid">
         {filtered.map((p) => (
           <ProjectCard key={p.id} project={p} />
