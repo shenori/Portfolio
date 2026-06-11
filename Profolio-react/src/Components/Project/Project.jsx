@@ -38,6 +38,23 @@ const projects = [
       github: "https://github.com/shenori/Inventory-System",
     },
   },
+  {
+    id: 11,
+    tag: "web-dev",
+    category: "Web Dev",
+    status: "In Progress",
+    statusColor: "status-progress",
+    title: "Wisen Book Mart",
+    subtitle: "Full-Stack Secondhand Bookstore",
+    description:
+      "A full-stack premium secondhand bookstore platform with EJS server-side rendering, JWT-based authentication, OTP email verification, password reset flow, and an admin dashboard for managing books, orders and categories.",
+    tools: ["Node.js", "Express", "MongoDB", "EJS", "Tailwind CSS", "JWT", "Nodemailer"],
+    type: "Group Project • 2026 - Present",
+    links: {
+      live: "",
+      github: "https://github.com/ItzDinal/Wisen.books",
+    },
+  },
 
   // ── UI/UX ─────────────────────────────────────────────────────────
   {
@@ -46,7 +63,7 @@ const projects = [
     category: "UI/UX Design",
     status: "Completed",
     statusColor: "status-done",
-    title: "WisenTask - AI Marketing Page",
+    title: "Makerting - AI Marketing Page",
     subtitle: "Marketing Page UI Design",
     description:
       "High-fidelity marketing page UI/UX design for an AI-powered task management SaaS product, featuring hero section, bento feature grid, pricing cards and testimonials.",
